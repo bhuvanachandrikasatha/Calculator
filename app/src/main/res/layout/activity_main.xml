@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/greybg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvans"
+        android:layout_width="323dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="5dp"
+        android:background="#434242"
+        android:gravity="center"
+        android:textColor="#FDFCFC"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addb"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="112dp"
+        android:background="#000000"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#000000"
+        android:textColorLink="#000000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etfv" />
+
+    <Button
+        android:id="@+id/mulb"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:text="*"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addb"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <Button
+        android:id="@+id/changemode"
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="136dp"
+        android:text="SIGNED"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsv" />
+
+    <Button
+        android:id="@+id/subb"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="160dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:text="-"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toEndOf="@+id/addb"
+        app:layout_constraintTop_toBottomOf="@+id/etsv" />
+
+    <Button
+        android:id="@+id/divb"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:text="/"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/mulb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etfv"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="enter value"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvans" />
+
+    <EditText
+        android:id="@+id/etsv"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="enter value"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toEndOf="@+id/etfv"
+        app:layout_constraintTop_toBottomOf="@+id/tvans" />
+
+    <TextView
+        android:id="@+id/valdisd"
+        android:layout_width="110dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="60dp"
+        android:gravity="clip_horizontal"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/modedis"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="You are supposed to enter decimal values"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etsv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
